@@ -176,9 +176,10 @@ window.onclick = function(e){
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button type="button" class="btn btn-warning mr-sm-2">My Account<i class="far fa-user-circle"></i>
+      <button id="myAccount" onclick="initMyProfile()" type="button" class="btn btn-warning mr-sm-2">My Account<i class="far fa-user-circle"></i>
       </button>
-      <button type="button" class="btn btn-warning mr-sm-2" data-toggle="modal" data-target="#myModal">SignUp<i class="far fa-user-circle"></i>
+	     
+      <button id="modal-btn" type="button" class="btn btn-warning mr-sm-2" data-toggle="modal" data-target="#myModal">SignUp<i class="far fa-user-circle"></i>
       </button>
       <input class="form-control mr-sm-2" type="search" placeholder="Search Users..." aria-label="Search" id="userAddress">
       <button class="btn btn-info my-1 my-sm-0" onclick="initUserProfile()" type="submit">Search</button>
